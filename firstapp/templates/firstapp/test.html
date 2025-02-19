@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Title </title>
+    <link rel="stylesheet" href="{% static 'test.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="icon">
+                <a href="#"> <b>BR</b> Architects </a>
+            </div>
+            <div class="menu">
+                <div>
+                    <a href="#project"> Projects </a>
+                </div>
+                <div>
+                    <a href="#about"> About </a>
+                </div>
+                <div>
+                    <a href="#contact"> Contact </a>
+                </div>
+            </div>
+        </nav>
+    
+    <section class="image-section">
+        <div class="image-container">
+            <img src="{% static 'architect.jpg' %}" alt="Architectural Design" class="section-image">
+            <div class="overlay-text">
+                <h1>
+                    <span>
+                        <b class="br">BR</b>
+                    </span>
+                    <span class="ar">
+                        Architects
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </section>
+    </header>
+    <div class="mainbody">
+        <div class="container" id="project">
+            <h3 class="project"> Projects </h3>
+        </div>
+    
+        <div class="first-row clearfix">
+            <div class="first-container">
+                <div class="inner-container">
+                    <div class="text">Summer House</div>
+                    <img src="{% static 'house5.jpg' %}" alt="" width="100%">
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="inner-container">
+                    <div class="text">Brick House</div>
+                    <img src="{% static 'house2.jpg' %}" alt="" width="100%">
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="inner-container">
+                    <div class="text">Renovated</div>
+                    <img src="{% static 'house3.jpg' %}" alt="" width="100%">
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="inner-container">
+                    <div class="text">Barn House</div>
+                    <img src="{% static 'house4.jpg' %}" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="second-row clearfix">
+            <div class="first-container">
+                <div class="inner-container">
+                    <div class="text">Summer House</div>
+                    <img src="{% static 'house2.jpg' %}" alt="" width="100%">
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="inner-container">
+                    <div class="text">Brick House</div>
+                    <img src="{% static 'house5.jpg' %}" alt="" width="100%">
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="inner-container">
+                    <div class="text">Renovated</div>
+                    <img src="{% static 'house4.jpg' %}" alt="" width="100%">
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="inner-container">
+                    <div class="text">Barn House</div>
+                    <img src="{% static 'house3.jpg' %}" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h3 class="heading"> About </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="first-row clearfix card-row">
+            <div class="first-container card">
+                <img src="{% static 'team2.jpg' %}" alt="">
+                <h3> John Doe </h3>
+                <p class="subheading"> CEO & Founder </p>
+                <p> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p>
+                    <button>
+                        Contact
+                    </button>
+                </p>
+            </div>
+            <div class="first-container card">
+                <img src="{% static 'team1.jpg' %}" alt="">
+                <h3> Jane Doe </h3>
+                <p class="subheading"> Architect </p>
+                <p> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p>
+                    <button>
+                        Contact
+                    </button>
+                </p>
+            </div>
+            <div class="first-container card">
+                <img src="{% static 'team3.jpg' %}" alt="">
+                <h3> Mike Ross </h3>
+                <p class="subheading"> Architect </p>
+                <p> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p>
+                    <button>
+                        Contact
+                    </button>
+                </p>
+            </div>
+            <div class="first-container card">
+                <img src="{% static 'team4.jpg' %}" alt="">
+                <h3> Dan Star </h3>
+                <p class="subheading"> Architect </p>
+                <p> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p>
+                    <button>
+                        Contact
+                    </button>
+                </p>
+            </div>
+        </div>
+        <div class="fourth-section" id="contact">
+            <h3 class="contact-section">Contact</h3>
+            <p>Lets get in touch and talk about your next project.</p>
+        </div>
+        <form action="#">
+        <input class="name" type="text" placeholder="Name">
+        <input class="email" type="email" placeholder="Email"> 
+        <input class="subject" type="text" placeholder="Subject">
+        <input class="comment" type="text" placeholder="Comment">
+        <button class="send" type="submit">
+            SEND MESSAGE
+        </button>
+        </form>
+        <div class="image-map">
+            <img src="{% static 'map.jpg' %}" alt="">
+        </div>
+    </div>
+    <footer>
+        <p> Powered by css </p>
+    </footer>
+
+</body>
+</html>

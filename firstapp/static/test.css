@@ -1,0 +1,299 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.menu{
+    display: flex;
+}
+.icon, .menu div{
+    padding: 8px 16px;
+    letter-spacing: 4px;
+}
+nav a{
+    color: #000 !important;
+    text-decoration: none;
+}
+.icon:hover, .menu div:hover{
+    background-color: #ccc;
+}
+.image-section {
+    position: relative;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.section-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+.overlay-text h1 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+.overlay-text .br {
+    background-color: #000;
+    padding: 8px 16px;
+    opacity: 0.75;
+}
+
+.mainbody{
+    padding: 8px 16px;
+    max-width: 1564px;
+    margin: auto;
+}
+.container{
+    padding: 32px 16px;
+}
+.project{
+    padding: 16px 0px;
+    margin: 10px 0px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 24px;
+}
+.firstrow{
+    padding: 0px 8px;
+    height: max-content;
+}
+.first-container{
+    padding: 0px 8px;
+    margin-bottom: 16px;
+    width: 24.99999%;
+    float: left;
+}
+.inner-container{
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.text{
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.heading{
+    padding: 16px 0px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.about p{
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+.card-row{
+    filter: grayscale(75%);
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+}
+.card .subheading{
+    opacity: 0.60;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+.card p{
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+.card p button{
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000;
+    background-color: #f1f1f1;
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    text-transform: none;
+}
+.fourth-section{
+    padding: 32px,16px;
+
+}
+.fourth-section h3{
+    padding: 16px 0px;
+    border-bottom: 1px solid #ccc !important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.fourth-section p{
+    margin: 15px 0px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.name{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc !important;
+    font: inherit;
+}
+.email{
+    width: 100%;
+    margin: 16px 0px;
+    border: 1px solid #ccc !important;
+    padding: 8px;
+    font: inherit;
+}
+.subject{
+    width: 100%;
+    border: 1px solid #ccc !important;
+    padding: 8px;
+    font: inherit;
+}
+.comment{
+    width: 100%;
+    padding: 8px;
+    font: inherit;
+    border: 1px solid #ccc !important;
+    margin: 16px 0px;
+}
+.send{
+    color: #fff !important;
+    background-color: #000 !important;
+    margin: 16px 0px;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    text-transform: none;
+    font: inherit;
+}
+.image-map img{
+    margin-top: 32px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    
+}
+
+footer{
+    color: #fff;
+    background-color: #000000;
+    text-align: center;
+    padding: 16px 0px;
+}
+footer p{
+    margin: 15px 0px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media only screen and ( max-width : 768px) {
+    
+    .first-container{
+        padding: 0px 8px;
+        margin-bottom: 16px;
+        width: 49.9999%;
+        float: left;
+    }
+}
+@media only screen and ( max-width : 480px) {
+    
+    .menu{
+        display: none;
+    }
+    .first-container{
+        padding: 0px 8px;
+        margin-bottom: 16px;
+        width: 99.9999%;
+        float: left;
+    }
+    .section-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: top;
+    }
+    .image-section {
+        position: relative;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ar{
+        display: none;
+}
