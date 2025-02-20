@@ -16,13 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from django.conf.urls import handler404
-from polls.views import welcome_view
-
-handler404 = welcome_view
+from polls.views import welcome_view, custom_404_view,custom_500_view 
 
 urlpatterns = [
+    path("", welcome_view, name="welcome"),
     path('admin/', admin.site.urls),
     path('firstapp/',include('firstapp.urls')),
     path("polls/", include("polls.urls"))
 ]
+
+handler404 = custom_404_view  
+handler500 = custom_500_view
